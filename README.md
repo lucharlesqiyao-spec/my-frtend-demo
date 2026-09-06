@@ -2,8 +2,18 @@
 
 
 ## Tech
-html
-css 
-typescript, javascript -> js
+- html
+- css 
+- typescript, javascript -> js
 file:///Users/charles/workspace/my-frtend-demo/Grace.html
-http://127.0.0.1:5500/homework.html
+- http://127.0.0.1:5500/homework.html
+
+
+## 20260823
+1. student list page add "add" button to open form page.
+2. make form page beatiful. 
+3. make the form page script code into a file. 
+
+CRUD
+
+

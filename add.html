@@ -10,8 +10,8 @@
         function showMessage() {
             verifyName()
             // alert("X value is : " + x);
+            verifyAge()    
             console.log("I am here boy. x:", x);
-
 
         }
 
@@ -22,19 +22,27 @@
             }
             console.log("input name:", nameValue);
         }
+
+        function verifyAge() {
+            var ageValue = document.getElementById("age").value;
+            if (ageValue.length >= 3) {
+                alert("age must be less than 100")}
+        }
+
+
     </script>
 </head> 
 
 <body> 
-    <h2>Student Form</h2>
+    <h2>Student Add</h2>
     <form action="/" method="post">
-        <!-- 文本输入框 -->
+        <!-- 名字输入框 -->
         <label for="name">Student name:</label>
-        <input type="text" id="name" name="name">
+        <input type="text" id="name" name="name" required>
 
         <br>
 
-        <!-- 密码输入框 -->
+        <!-- 年龄输入框 -->
         <label for="password">Student age:</label>
         <input type="text" id="age" name="age" required>
 
