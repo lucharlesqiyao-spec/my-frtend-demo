@@ -10,10 +10,27 @@ file:///Users/charles/workspace/my-frtend-demo/Grace.html
 
 
 ## 20260823
-1. student list page add "add" button to open form page.
-2. make form page beatiful. 
-3. make the form page script code into a file. 
+1. student list page add "add" button to open form page. -- done
+2. make form page beatiful.  
+3. make the form page script code into a file. -- done
 
 CRUD
+
+软件工程
+requirment
+analysys
+design
+Development
+Test
+Deployment
+
+class -- object
+
+## 20260913
+2. make form page beatiful. 
+
+
+
+
 
 
