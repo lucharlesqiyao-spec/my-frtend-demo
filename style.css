@@ -1,33 +1,133 @@
+/* style.css 
+1. 全局初始化：清除默认内外边距，统一字体，`box-sizing` 盒模型，布局更稳定
+2. 头部：换更深的绿色，flex 垂直居中标题，白色文字，去掉刺眼亮绿
+3. 左侧菜单：改成稳重蓝色，增加内边距，文字白色，行高拉开阅读舒适
+4. 内容区：背景改为白色，增加内边距；
+5. “Add / 添加” 链接美化成绿色按钮，hover 有颜色变化；
+6. 表格：合并边框，单元格增加内边距，隔行变色，链接 hover 下划线，表格铺满内容区域；
+7. 页脚：换成深色背景 + 白色文字，增加上下内边距，版权区域更好看
+8. 把固定 height 改为`min‑height`，内容多的时候可以自动撑开，不会被高度卡死。
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Microsoft Yahei", sans‑serif;
+}
+
 #container {
     width: 1280px;
-    height: 1600px;
+    min-height: 800px;
+    margin: 0 auto;
+    background-color: #f7f9fa;
 }
 
 #header {
-    background-color: #3cd97b;
+    background-color: #27ae60;
     height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    color: #fff;
 }
 
 #header h1 {
     margin-bottom: 0;
+    letter-spacing: 4px;
+    font-size: 32px;
 }
 
 #menu {
-    background-color: #71d2fb;
+    background-color: #3498db;
     width: 150px;
     float: left;
-    height: 1500px;
+    min-height: 800px;
+    padding: 24px 16px;
+    color: #ffffff;
+}
+
+#menu b {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 16px;
+}
+
+#menu ol {
+    padding-left: 22px;
+    line-height: 2.2;
+    font-size: 16px;
 }
 
 #content {
-    background-color: #dae858;
+    background-color: #ffffff;
     width: 1130px;
-    height: 1500px;
+    min-height: 800px;
     float: left;
+    padding: 30px;
+}
+
+#content h1 {
+    margin-bottom: 16px;
+    color: #2c3e50;
+}
+
+/* search盒子：按钮右对齐 */
+#search {
+    text-align: right;
+    margin-bottom: 24px;
+}
+
+#search button {
+    background: #27ae60;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#search button:hover {
+    background-color: #219150;
+}
+
+#content table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#content table td {
+    padding: 12px 10px;
+    font-size: 15px;
+}
+
+/* ==========新增表头样式========== */
+/* 表格第一行（表头）单元格：加粗、文字居中、背景浅灰区分 */
+#content table tr:first-child td {
+    font-weight: bold;
+    text-align: center;
+    background-color: #e8edf2;
+}
+
+#content table tr:nth-child(even) {
+    background-color: #f2f6f9;
+}
+
+#content table a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+#content table a:hover {
+    text-decoration: underline;
 }
 
 #footer {
-    background-color: #55a4cbfc;
+    background-color: #34495e;
+    color: #fff;
     clear: both;
     text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
 }
+

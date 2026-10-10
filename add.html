@@ -1,55 +1,74 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <title>Charles</title>
+    <!--引入外部独立css-->
+    <link rel="stylesheet" href="./add.css">
     <script src="./add.js"></script>
-
-</head> 
-
-<body> 
+</head>
+<body>
     <h2>Student Add</h2>
     <form action="/" method="post">
         <!-- 名字输入框 -->
-        <label for="name">Student name:</label>
-        <input type="text" id="name" name="name" required>
-
-        <br>
-
+        <div class="form‑item">
+            <label for="name">Student name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
         <!-- 年龄输入框 -->
-        <label for="password">Student age:</label>
-        <input type="text" id="age" name="age" required>
-
-        <br>
-
-        <!-- 单选按钮 -->
-        <label>Gender:</label>
-        <input type="radio" id="male" name="gender" value="male" checked>
-        <label for="male">male</label>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">female</label>
-
-        <br>
-
-        <!-- 复选框 -->
-        <label for="fav">fav: </label>
-        <input type="checkbox" id="football" name="football" checked>
-        <label for="football">football</label>
-        <input type="checkbox" id="swimming" name="swimming">
-        <label for="swimming">swimming</label>
-        <input type="checkbox" id="soccer" name="soccer" <label for="soccer">soccer</label>
-        <input type="checkbox" id="basketball" name="basketball">
-        <label for="basketball">basketball</label>
-        <input type="checkbox" id="dancing" name="dancing">
-        <label for="dancing">dancing</label>
-        <input type="checkbox" id="singing" name="singing">
-        <label for="singing">football</label>
-
-        <br>
-        <!-- 提交按钮 -->
-        <button onclick="showMessage()"> 提交</button>
+        <div class="form‑item">
+            <label for="age">Student age:</label>
+            <input type="text" id="age" name="age" required>
+        </div>
+        <!-- 单选按钮 性别 -->
+        <div class="form‑item">
+            <label>Gender:</label>
+            <div class="radio‑group">
+                <div>
+                    <input type="radio" id="male" name="gender" value="male" checked>
+                    <label for="male">male</label>
+                </div>
+                <div>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">female</label>
+                </div>
+            </div>
+        </div>
+        <!-- 复选框 爱好 -->
+        <div class="form‑item">
+            <label>fav:</label>
+            <div class="checkbox‑group">
+                <div>
+                    <input type="checkbox" id="football" name="football" checked>
+                    <label for="football">football</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="swimming" name="swimming">
+                    <label for="swimming">swimming</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="soccer" name="soccer">
+                    <label for="soccer">soccer</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="basketball" name="basketball">
+                    <label for="basketball">basketball</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="dancing" name="dancing">
+                    <label for="dancing">dancing</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="singing" name="singing">
+                    <label for="singing">singing</label>
+                </div>
+            </div>
+        </div>
+        <!-- 提交 + 取消按钮区域 -->
+        <div class="btn-group">
+            <button type="button" onclick="showMessage()">提交</button>
+            <button type="button" onclick="location.href='./index.html'">取消</button>
+        </div>
     </form>
-    
-
 </body>
+</html>
