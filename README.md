@@ -39,7 +39,15 @@ class -- object
 1. new branch.
 2. page layout refine
 3. database on the server
-4. backend api project
+4. backend api project: stu-admin-api
+
+
+## database 
+主机：118.195.151.124
+端口：30306
+用户：charles
+密码：charles@2026
+数据库：charles_db
 
 
 

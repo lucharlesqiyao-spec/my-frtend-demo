@@ -17,19 +17,24 @@
 
 #container {
     width: 1280px;
-    min-height: 800px;
+    min-height: 1000px;
     margin: 0 auto;
     background-color: #f7f9fa;
 }
 
 #header {
-    background-color: #27ae60;
+    /* background-color: #27ae60; */
+    background-image: url("./header-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     height: 100px;
     display: flex;
     align-items: center;
     padding: 0 24px;
     color: #fff;
 }
+
 
 #header h1 {
     margin-bottom: 0;
@@ -92,6 +97,7 @@
 }
 
 #content table {
+    border: 2px solid #e8edf2;
     width: 100%;
     border-collapse: collapse;
 }
@@ -104,13 +110,15 @@
 /* ==========新增表头样式========== */
 /* 表格第一行（表头）单元格：加粗、文字居中、背景浅灰区分 */
 #content table tr:first-child td {
+
     font-weight: bold;
     text-align: center;
-    background-color: #e8edf2;
+    background-color: #6fa3ca;
 }
 
 #content table tr:nth-child(even) {
     background-color: #f2f6f9;
+
 }
 
 #content table a {
