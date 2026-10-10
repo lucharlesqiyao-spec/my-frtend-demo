@@ -35,3 +35,16 @@ class -- object
 1. test developing together - push code from Jory
 
 
+## 20261010
+1. new branch.
+2. page layout refine
+3. database on the server
+4. backend api project
+
+
+
+
+<div id="container" style="width:1280px;height: 1600px">
+    
+</div>
+
